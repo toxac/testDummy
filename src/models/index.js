@@ -8,6 +8,6 @@ const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
 
-db.ideas = require("./ideas.model.js")(mongoose);
+db.ideas = require("./ideas.model")(mongoose);
 
 module.exports = db;
